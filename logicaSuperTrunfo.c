@@ -150,17 +150,21 @@ int main() {
     superpoder2 = (float) populacao2 + (float) area2 + (float) pib2 + (float) pontosturisticos2 + (float) invertdensidadepop2 + (float) pibpercapita2;
     printf("Super Poder: %.2f\n", superpoder2);
 
-    //Definindo os atributos que vão armazenar as comparações das cartas
 
+    //Utilizando IF-ELSE para calcular o atributo de população das 2 cartas e definir a vencedora
 
-    //Utilizando IF-ELSE para calcular todos os atributos das 2 cartas e definir a vencedora em cada atributo
-
-    if (populacao1 > populacao2);{
-        printf("Comparação das cartas (Atributo: População):\n");
+    if (populacao1 > populacao2){
+        printf("\nComparação das cartas (Atributo: População):\n");
         printf("\nCarta 1 - %c: %lu", estado1[0], populacao1);
         printf("\nCarta 2 - %c: %lu", estado2[0], populacao2);
-        printf("\nResultado: x venceu", estado2[0], populacao2);
+        printf("\nResultado: Carta %c venceu\n", estado1[0]);
     }
+        else{
+            printf("\nComparação das cartas (Atributo: População):\n");
+            printf("\nCarta 1 - %c: %lu", estado1[0], populacao1);
+            printf("\nCarta 2 - %c: %lu", estado2[0], populacao2);
+            printf("\nResultado: Carta %c venceu!\n", estado2[0]);
+        }
 
     return 0;
 }
